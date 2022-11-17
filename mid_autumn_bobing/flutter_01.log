@@ -1,0 +1,57 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run
+
+## exception
+
+NoSuchMethodError: NoSuchMethodError: The getter 'uri' was called on null.
+Receiver: null
+Tried calling: uri
+
+```
+#0      Object.noSuchMethod (dart:core-patch/object_patch.dart:63:5)
+#1      ResidentRunner.printDebuggerList (package:flutter_tools/src/resident_runner.dart:1382:47)
+#2      FlutterResidentDevtoolsHandler.serveAndAnnounceDevTools (package:flutter_tools/src/resident_devtools_handler.dart:96:23)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, 2.5.1, on Microsoft Windows [Version 10.0.19044.2130], locale zh-CN)
+    • Flutter version 2.5.1 at D:\src\flutter
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision ffb2ecea52 (1 year, 2 months ago), 2021-09-17 15:26:33 -0400
+    • Engine revision b3af521a05
+    • Dart version 2.14.2
+    • Pub download mirror https://pub.flutter-io.cn
+    • Flutter download mirror https://storage.flutter-io.cn
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 31.0.0)
+    • Android SDK at D:\android
+    • Platform android-31, build-tools 31.0.0
+    • Java binary at: D:\Program Files\Android\Android Studio\jre\bin\java
+    • Java version OpenJDK Runtime Environment (build 11.0.10+0-b96-7249189)
+    • All Android licenses accepted.
+
+[✓] Chrome - develop for the web
+    • Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
+
+[✓] Android Studio (version 2020.3)
+    • Android Studio at D:\Program Files\Android\Android Studio
+    • Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    • Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+    • Java version OpenJDK Runtime Environment (build 11.0.10+0-b96-7249189)
+
+[✓] Connected device (3 available)
+    • DVC AN20 (mobile) • Q2NNW20827000883 • android-arm64  • Android 10 (API 29)
+    • Chrome (web)      • chrome           • web-javascript • Google Chrome 103.0.5060.114
+    • Edge (web)        • edge             • web-javascript • Microsoft Edge 107.0.1418.26
+
+• No issues found!
+```
